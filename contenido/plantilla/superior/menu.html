@@ -1,10 +1,10 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm mb-4 p-2">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Mi Sitio</a>
+        <img src="{% static 'img/logo-min.png' %}" alt="Logo">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,12 +28,11 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Contacto</a>
+                    <a class="nav-link" href="#">Contacto</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                <button class="btn btn-outline-light" type="submit">Buscar</button>
+                <button class="btn btn-outline-light" type="submit">Buscar Documento</button>
             </form>
         </div>
     </div>
