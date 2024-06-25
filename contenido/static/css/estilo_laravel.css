@@ -1,0 +1,39 @@
+.curso-section h2 {
+    color: #2c3e50;
+}
+
+.curso-section p.descripcion {
+    color: #7f8c8d;
+}
+
+.imagen-curso img {
+    border-radius: .5rem;
+}
+
+.contenido-curso h3 {
+    color: #2980b9;
+}
+
+.contenido-curso ul li {
+    background: none;
+    border: none;
+    padding-left: 0;
+}
+
+.contenido-curso ul li::before {
+    content: "✓";
+    color: #2980b9;
+    margin-right: .5rem;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
+
+.rounded {
+    border-radius: .25rem !important;
+}

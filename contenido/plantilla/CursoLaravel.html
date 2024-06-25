@@ -1,0 +1,59 @@
+{% extends "plantilla.html" %}
+{% load static %}
+{% block title %}
+Curso Laravel
+{% endblock %}
+{% block link %}
+{% endblock %}
+{% block content %}
+<div class="container my-5">
+    <!-- Sección 1: Detalles del Curso -->
+    <section class="curso-section text-center mb-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="display-4">Curso de Laravel</h2>
+                <p class="descripcion lead">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ultrices magna.
+                    Phasellus vitae scelerisque est. Nullam malesuada risus in ipsum consectetur, vitae
+                    tempus ipsum condimentum.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2 y 3: Imagen y Contenido del Curso -->
+    <section class="curso-section">
+        <div class="row align-items-center">
+            <!-- Columna 1: Imagen llamativa -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="card border-0 shadow-sm">
+                    <img src="{% static 'img/image.png' %}" class="card-img-top" alt="Imagen del curso">
+                </div>
+            </div>
+            <!-- Columna 2: Contenido del curso -->
+            <div class="col-md-6">
+                <div class="p-4 p-md-5 bg-light rounded shadow-sm">
+                    <h3 class="mb-4">Contenido del Curso</h3>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item">Introducción a Laravel</li>
+                        <li class="list-group-item">Instalación y Configuración</li>
+                        <li class="list-group-item">Rutas y Controladores</li>
+                        <li class="list-group-item">Modelos y Migraciones</li>
+                        <li class="list-group-item">Vistas y Blade Templates</li>
+                        <li class="list-group-item">Autenticación y Autorización</li>
+                        <li class="list-group-item">APIs y RESTful Services</li>
+                        <li class="list-group-item">Testing y Debugging</li>
+                    </ul>
+                    <p class="descripcion">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ultrices magna.
+                        Phasellus vitae scelerisque est. Nullam malesuada risus in ipsum consectetur, vitae
+                        tempus ipsum condimentum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+{% block script %}
+{% endblock %}
