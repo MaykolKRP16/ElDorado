@@ -1,0 +1,33 @@
+{% extends "plantilla.html" %}
+{% load static %}
+{% block title %}
+Nosotros
+{% endblock %}
+{% block link %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/estilo_Nosotros.css' %}">
+{% endblock %}
+{% block content %}
+<div class="container d-flex flex-column align-items-center justify-content-center min-vh-100">
+    <div class="text-center mb-4">
+        <h1>Nosotros</h1>
+        <div class="underline"></div>
+    </div>
+    <div class="row w-100">
+        <div id="contenidoN" class="col-md-6 mb-4">
+            <h2>Pioneros en el Norte del Perú</h2>
+            <p>
+                Somos Transportes El Dorado S.A.C., una empresa sólida que cuenta con más de 40 años de experiencia ofreciendo excelentes servicios a todos los pasajeros. Visite nuestra empresa de transportes.
+                <br />
+                Tenemos vocación de servicio, por ello cumplimos con los estándares de calidad en seguridad y comodidad, convirtiéndonos en una empresa líder en el rubro.
+                <br />
+                Contamos con buses de gran comodidad, además de un gran servicio a bordo para que su viaje sea sumamente placentero. ¡Contáctenos pronto!
+            </p>
+        </div>
+        <div id="imagenN" class="col-md-6 d-flex justify-content-center">
+            <img src="{% static 'img/nosotros.jpg' %}" class="img-fluid" alt="Imagen de nosotros">
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block script %}
+{% endblock %}

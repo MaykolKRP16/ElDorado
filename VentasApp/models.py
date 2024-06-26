@@ -11,6 +11,7 @@ class Cliente(models.Model):
     estado = models.BooleanField()
     def __str__(self) -> str:
         return self.nombres
+    
 class Categoria(models.Model):
     descripcion=models.CharField(max_length=30)
     estado=models.BooleanField()

@@ -1,0 +1,11 @@
+.underline {
+    width: 50%; /* Puedes ajustar el ancho según tus preferencias */
+    height: 4px; /* Grosor de la línea */
+    background-color: #000; /* Color de la línea */
+    margin: 10px auto; /* Márgenes automáticos para centrar */
+    border-radius: 5px; /* Bordes redondeados para una apariencia más elegante */
+}
+
+#contenidoN p {
+    text-align: justify; /* Justificar el texto */
+}

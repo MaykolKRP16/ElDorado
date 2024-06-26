@@ -3,4 +3,8 @@ from VentasApp.models import Cliente,Productos,Categoria
 # Register your models here.
 class ClientesAdmin(admin.ModelAdmin):
     list_display=("nombres","apellidos","direccion","telefono")
+
+
 admin.site.register(Cliente,ClientesAdmin)
+admin.site.register(Productos)
+admin.site.register(Categoria)
