@@ -3,4 +3,5 @@ def inicio(request):
     return render(request,"inicio.html")
 def nosotros(request):
     return render(request,"nosotros.html")
-
+def ad(request):
+    return render(request,"admin.html")

@@ -1,0 +1,9 @@
+{% extends "plantilla.html" %}
+
+{% block title %} 
+<h1>Panel</h1>  
+{% endblock %}
+
+{% block content %}
+    <iframe src="{% url 'admin:index' %}" frameborder="0"></iframe>
+{% endblock %}

@@ -1,10 +1,13 @@
 from django.contrib import admin
-from VentasApp.models import Cliente,Productos,Categoria
-# Register your models here.
-class ClientesAdmin(admin.ModelAdmin):
-    list_display=("nombres","apellidos","direccion","telefono")
+from VentasApp.models import Cliente, Ruta, Carro, Reserva, Boleto, Asiento
+from VentasApp.forms import BoletoForm
 
+class BoletoAdmin(admin.ModelAdmin):
+    form = BoletoForm
 
-admin.site.register(Cliente,ClientesAdmin)
-admin.site.register(Productos)
-admin.site.register(Categoria)
+admin.site.register(Cliente)
+admin.site.register(Ruta)
+admin.site.register(Carro)
+admin.site.register(Reserva)
+admin.site.register(Boleto, BoletoAdmin)
+admin.site.register(Asiento)
